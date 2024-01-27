@@ -1,4 +1,4 @@
-FROM tverous/pytorch-notebook
+FROM base-pytorch-notebook:latest
 
 ARG MY_UID
 ARG MY_GID

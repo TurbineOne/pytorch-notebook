@@ -11,14 +11,19 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     apt-utils \
     vim \
-    git
+    git \
+    ffmpeg \
+    libsm6 \
+    libxext6
 
 # alias python='python3'
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
 # build with some basic python packages
 RUN pip install \
+    ffmpeg-python \
     numpy \
+    opencv-python \
     torch \
     jupyterlab
 
