@@ -1,0 +1,17 @@
+settings_version: 0.0.4
+datasets_dir: /home/joshua/ffm_api_experiments/datasets
+weights_dir: weights
+runs_dir: runs
+uuid: 8441afac4b1f1d50c858b600a8c2480566706bbb4fb987d1aa7499f342382d79
+sync: true
+api_key: ''
+openai_api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true

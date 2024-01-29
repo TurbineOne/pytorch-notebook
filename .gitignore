@@ -3,3 +3,5 @@
 **/.jupyter
 **/.local
 **/__pycache__
+**/*.sock
+**/.cache
