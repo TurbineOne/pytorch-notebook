@@ -25,7 +25,11 @@ RUN pip install \
     numpy \
     opencv-python \
     torch \
-    jupyterlab
+    jupyterlab \
+    torch_tb_profiler \
+    tqdm \
+    transformers \
+    HolisticTraceAnalysis
 
 # start jupyter lab
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]

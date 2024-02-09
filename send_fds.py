@@ -41,12 +41,15 @@ def send_file(file_name: str = None, url: str = None, mp4: str = None):
             socket.send_fds(sender, [msgb], desList, 2, None)
 
             reader = os.open(mp4, os.O_RDONLY)
-            for i in range(100):
-                data = os.read(reader, 1024 * 100)
-                if data:
-                    os.write(fds, data)
-                else:
-                    break
+            while True:
+                try:
+                    data = os.read(reader, 1024 * 100)
+                    if not data:
+                        print("Wrote whole file")
+                        break
+                    tf.write(data)
+                except Exception as e:
+                    raise e
 
     # Receive data from the Unix Domain Socket
     while(True):

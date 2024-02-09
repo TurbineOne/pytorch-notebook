@@ -5,3 +5,8 @@
 **/__pycache__
 **/*.sock
 **/.cache
+**/.bash_history
+**/.python_history
+**/.triton
+**/log/**
+**/*.pickle
