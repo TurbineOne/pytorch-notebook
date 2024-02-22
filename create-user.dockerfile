@@ -1,4 +1,6 @@
-FROM base-pytorch-notebook:latest
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+
 
 ARG MY_UID
 ARG MY_GID

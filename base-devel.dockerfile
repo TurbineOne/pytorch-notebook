@@ -1,5 +1,5 @@
 # pull from devel image instead of base
-FROM nvidia/cuda:12.1.0-devel-ubuntu22.04
+FROM nvidia/cuda:12.2.2-base-ubuntu22.04
 
 # Set bash as the default shell
 ENV SHELL=/bin/bash
@@ -20,10 +20,7 @@ RUN ln -s /usr/bin/python3 /usr/bin/python
 # build with some basic python packages
 RUN pip install \
     numpy \
-    torch \
-    torchvision \
-    jupyterlab \
-    ultralytics
+    jupyterlab
 
 # start jupyter lab
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]

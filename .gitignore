@@ -10,3 +10,6 @@
 **/.triton
 **/log/**
 **/*.pickle
+**/.config
+**/.keras
+**/.sudo_as_admin_successful

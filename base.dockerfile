@@ -24,7 +24,7 @@ RUN pip install \
     ffmpeg-python \
     numpy \
     opencv-python \
-    torch \
+    torchvision \
     jupyterlab \
     torch_tb_profiler \
     tqdm \
